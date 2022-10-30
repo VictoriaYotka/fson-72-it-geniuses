@@ -59,6 +59,20 @@ address {
   padding: 0 30px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* HEADER */
 
 .header {
@@ -130,4 +144,48 @@ address {
   line-height: 1.56;
   color: var(--secondary-text-color);
   padding: 10px 30px 9px 41px;
+}
+
+/* About */
+
+.about {
+  padding-top: 122px;
+  padding-bottom: 19px;
+
+  background-color: #f4f4f4;
+}
+
+.about .container {
+  padding: 0 66px;
+}
+
+.about-list {
+  display: flex;
+  gap: 71px;
+}
+
+.list {
+}
+
+.about-item {
+}
+
+.about-title {
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
+
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+
+.about-description {
+  line-height: 1.56;
+
+  text-align: center;
+
+  color: var(--primary-text-color);
 }
