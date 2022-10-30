@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--primary-text-color);
   background-color: var(--main-bg-color);
   font-size: 18px;
@@ -57,4 +57,45 @@ address {
   width: 1360px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #5e5e5e;
+}
+
+.header .container {
+  padding: 0 50px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  gap: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+  font-size: 35px;
+  line-height: 1.21;
+  color: var(--secondary-text-color);
+}
+
+.accent {
+  margin-right: 12px;
+  color: var(--accent-color);
+}
+
+.nav-link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  line-height: 1.56;
+  color: var(--secondary-text-color);
 }
