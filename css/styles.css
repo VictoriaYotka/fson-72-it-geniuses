@@ -3,10 +3,11 @@
   --primary-text-color: #333333;
   --secondary-text-color: #ffffff;
   --main-bg-color: #ffffff;
+  --secondary-bg-color: #f4f4f4;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: var(--primary-text-color);
   background-color: var(--main-bg-color);
   font-size: 18px;
@@ -240,5 +241,80 @@ address {
   background-color: transparent;
 
   border: 1px solid var(--secondary-text-color);
+  border-radius: 5px;
+}
+
+/* Callback */
+
+.callback {
+  background-color: var(--secondary-bg-color);
+}
+
+.callback-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.callback-container::before {
+  content: '';
+  display: block;
+  width: 50%;
+  min-height: 460px;
+  background-image: url(../images/background-images/callback-background-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.callback-content {
+  width: 50%;
+  padding-top: 78px;
+  padding-right: 30px;
+  padding-bottom: 82px;
+  padding-left: 30px;
+}
+
+/* This style is the same for all titles of sections  */
+.section-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
+.callback-title {
+  margin-bottom: 34px;
+}
+
+.input-field {
+  width: 620px;
+  padding: 6px 5px 5px 5px;
+
+  line-height: 1.56;
+
+  border: 1px solid #f5f5f5;
+}
+
+.input-field:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.input-field:last-child {
+  margin-bottom: 60px;
+}
+
+.send-button {
+  width: 620px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+
+  line-height: 1.39;
+
+  color: var(--secondary-text-color);
+
+  background-color: var(--accent-color);
+  border: none;
   border-radius: 5px;
 }
