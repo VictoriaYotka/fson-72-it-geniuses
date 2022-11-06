@@ -242,3 +242,55 @@ address {
   border: 1px solid var(--secondary-text-color);
   border-radius: 5px;
 }
+
+/* Business Cases */
+.cases{
+  margin: 50px auto 47px auto;
+}
+
+
+.container-cases{
+  margin: 0 auto;
+  width: 1360px;
+  text-align: center;
+}
+
+.cases-first-p{
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+  color: #333333;
+}
+
+.cases-title{
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.263;
+  text-align: center;
+  color: #333333;
+  padding-top: 15px;
+}
+
+.cases-second-p{
+  font-size: 18px;
+  line-height: 1.556;
+  text-align: center;
+  color: #333333;
+  padding-top: 34px;
+}
+
+.photos-flex{
+  list-style-type: none;
+  margin: 0;
+  padding: 39px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px 8px;
+}
+
+.cases-photos{
+  width: 320px;
+  height: 214px;
+  border-radius: 0px;
+}
