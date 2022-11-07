@@ -244,39 +244,37 @@ address {
 }
 
 /* Business Cases */
-.cases{
+.section-cases{
   margin: 50px auto 47px auto;
 }
 
 
-.container-cases{
-  margin: 0 auto;
-  width: 1360px;
-  text-align: center;
+.section-cases .container{
+  padding: 0 28px;
 }
 
-.cases-first-p{
+.uppertitle-cases{
   font-size: 20px;
   line-height: 1.65;
   text-align: center;
-  color: #333333;
+  color: var(--primary-text-color);
+  margin-bottom: 15px;
 }
 
-.cases-title{
+.title-cases{
   font-weight: 300;
   font-size: 38px;
   line-height: 1.263;
   text-align: center;
-  color: #333333;
-  padding-top: 15px;
+  color: var(--primary-text-color);
+  margin-bottom: 34px;
 }
 
-.cases-second-p{
+.text-cases{
   font-size: 18px;
   line-height: 1.556;
   text-align: center;
-  color: #333333;
-  padding-top: 34px;
+  color: var(--primary-text-color);
 }
 
 .photos-flex{
