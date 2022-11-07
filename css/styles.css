@@ -251,10 +251,7 @@ address {
   padding-bottom: 16px;
 }
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding-right: 0;
   padding-left: 0;
 }
@@ -272,12 +269,25 @@ address {
   margin-bottom: 10px;
 }
 
+.socials-item {
+  width: 35px;
+  height: 35px;
+}
+.facebook {
+  width: 40px;
+}
+
+.linkedin {
+  width: 31px;
+}
+
 .socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
+  width: 100%;
+  height: 100%;
+
   color: var(--secondary-text-color);
 }
 
