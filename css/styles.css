@@ -3,6 +3,7 @@
   --primary-text-color: #333333;
   --secondary-text-color: #ffffff;
   --main-bg-color: #ffffff;
+  --footer-bg-color: rgba(51, 51, 51, 1);
 }
 
 body {
@@ -241,4 +242,45 @@ address {
 
   border: 1px solid var(--secondary-text-color);
   border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--footer-bg-color);
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.footer-copyright {
+  color: var(--secondary-text-color);
+  line-height: 1.56;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  color: var(--secondary-text-color);
+}
+
+.socials-icon {
+  fill: currentColor;
 }
