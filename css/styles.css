@@ -245,9 +245,8 @@ address {
 
 /* Business Cases */
 .section-cases{
-  margin: 50px auto 47px auto;
+  padding: 50px 0 47px 0;
 }
-
 
 .section-cases .container{
   padding: 0 28px;
@@ -275,12 +274,13 @@ address {
   line-height: 1.556;
   text-align: center;
   color: var(--primary-text-color);
+  margin-bottom: 39px;
 }
 
 .photos-flex{
   list-style-type: none;
   margin: 0;
-  padding: 39px 0 0 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
