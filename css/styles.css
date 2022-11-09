@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--primary-text-color);
   background-color: var(--main-bg-color);
   font-size: 18px;
@@ -126,6 +126,13 @@ address {
 /* HERO */
 
 .hero {
+  margin: 0 auto;
+  max-width: 1400px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: #5e5e5e;
   padding: 259px 0 284px;
   text-align: center;
@@ -147,18 +154,26 @@ address {
 }
 
 .hero-btn {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--accent-color);
   border-radius: 5px;
   line-height: 1.56;
   color: var(--secondary-text-color);
-  padding: 10px 30px 9px 41px;
+  padding: 10px 30px 9px 27px;
+}
+
+.hero-btn-icon {
+  margin-right: 5px;
+  fill: currentColor;
 }
 
 /* About */
 
 .about {
-  padding-top: 122px;
+  padding-top: 40px;
   padding-bottom: 19px;
 
   background-color: #f4f4f4;
@@ -170,13 +185,26 @@ address {
 
 .about-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 71px;
 }
 
-.list {
+.about-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  width: 67px;
+  height: 67px;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: #28a745;
 }
 
-.about-item {
+.about-icon {
+  fill: currentColor;
 }
 
 .about-title {
@@ -252,7 +280,6 @@ address {
   border-radius: 5px;
 }
 
-
 /* Callback */
 
 .callback-section {
@@ -267,7 +294,7 @@ address {
 }
 
 .callback-container::before {
-  content: '';
+  content: "";
   display: block;
   width: 50%;
   min-height: 460px;
@@ -284,7 +311,6 @@ address {
   padding-bottom: 82px;
   padding-left: 30px;
 }
-
 
 .callback-title {
   margin-bottom: 34px;
@@ -319,8 +345,7 @@ address {
   background-color: var(--accent-color);
   border: none;
   border-radius: 5px;
-  }
-  
+}
 
 /* Footer */
 .footer {
@@ -367,8 +392,9 @@ address {
 
 .socials-icon {
   fill: currentColor;
-  
-  .footer-copyright {
+}
+
+.footer-copyright {
   color: var(--secondary-text-color);
   line-height: 1.56;
 }
