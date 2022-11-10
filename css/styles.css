@@ -253,15 +253,15 @@ address {
 }
 
 /* Business Cases */
-.section-cases{
+.section-cases {
   padding: 50px 0 47px 0;
 }
 
-.section-cases .container{
+.section-cases .container {
   padding: 0 28px;
 }
 
-.uppertitle-cases{
+.uppertitle-cases {
   font-size: 20px;
   line-height: 1.65;
   text-align: center;
@@ -269,7 +269,7 @@ address {
   margin-bottom: 15px;
 }
 
-.title-cases{
+.title-cases {
   font-weight: 300;
   font-size: 38px;
   line-height: 1.263;
@@ -278,7 +278,7 @@ address {
   margin-bottom: 34px;
 }
 
-.text-cases{
+.text-cases {
   font-size: 18px;
   line-height: 1.556;
   text-align: center;
@@ -286,7 +286,7 @@ address {
   margin-bottom: 39px;
 }
 
-.photos-flex{
+.photos-flex {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -296,10 +296,84 @@ address {
   gap: 7px 8px;
 }
 
-.cases-photos{
+.cases-photos {
   width: 320px;
   height: 214px;
   border-radius: 0px;
+}
+
+/* Team */
+.team-section {
+  padding-top: 49px;
+  padding-bottom: 59px;
+}
+
+.team-section .first-line {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  color: var(--primary-text-color);
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 38px;
+  line-height: 1.3;
+  color: var(--primary-text-color);
+  margin-bottom: 34px;
+  font-weight: 300;
+}
+
+.team-section .team-descr {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--primary-text-color);
+  margin-bottom: 45px;
+}
+
+.team-section ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person {
+  margin-right: 19px;
+}
+.person-second {
+  margin-right: 12px;
+}
+.person:last-child {
+  margin-right: 0px;
+}
+.no-gap {
+  display: block;
+}
+
+.beneath-big-img {
+  margin-top: 11px;
+}
+
+.team-section h3 {
+  text-align: center;
+  color: var(--primary-text-color);
+  font-size: 25px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.side-imgs h3 {
+  margin-top: 13px;
+}
+.beneath-big-img {
+  margin-top: 11px;
+}
+
+.team-list p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 /* Callback */
@@ -334,7 +408,6 @@ address {
   padding-left: 30px;
 }
 
-
 .callback-title {
   margin-bottom: 34px;
 }
@@ -368,8 +441,7 @@ address {
   background-color: var(--accent-color);
   border: none;
   border-radius: 5px;
-  }
-  
+}
 
 /* Footer */
 .footer {
