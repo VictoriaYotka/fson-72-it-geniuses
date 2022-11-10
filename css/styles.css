@@ -4,6 +4,7 @@
   --secondary-text-color: #ffffff;
   --main-bg-color: #ffffff;
   --secondary-bg-color: #f4f4f4;
+  --posts-bg-color: #0284D0;
   --footer-bg-color: rgba(51, 51, 51, 1);
 }
 
@@ -248,6 +249,50 @@ address {
   color: var(--secondary-text-color);
   background-color: transparent;
 
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 5px;
+}
+
+
+/*Posts*/
+.posts {
+  display: flex;
+  padding: 0;
+ }
+.posts-content-wrapper{
+  width: 50%;
+  padding: 84px 44px 84px 30px;
+
+  background-color: var(--posts-bg-color);
+}
+
+
+.posts-top-title{
+  font-size: 20px;
+  line-height: 33px;
+  color: var(--secondary-text-color);
+  margin-bottom:5px;
+}
+.posts-title{
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin-bottom: 26px;
+
+}
+.posts-description{
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+}
+.posts-btn{
+  display: inline-block;
+  padding: 11px 31px 10px 42px;
+  line-height: 1.56;
+  color: var(--secondary-text-color);
+  background-color: transparent;
   border: 1px solid var(--secondary-text-color);
   border-radius: 5px;
 }
