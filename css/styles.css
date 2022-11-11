@@ -85,7 +85,11 @@ address {
 /* HEADER */
 
 .header {
-  background-color: #5e5e5e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(94, 94, 94, 0.1);
 }
 
 .header .container {
@@ -115,6 +119,10 @@ address {
   color: var(--accent-color);
 }
 
+.logo-icon {
+  fill: var(--accent-color);
+}
+
 .nav-link {
   display: block;
   padding-top: 21px;
@@ -126,6 +134,12 @@ address {
 /* HERO */
 
 .hero {
+  margin: 0 auto;
+  max-width: 1400px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: #5e5e5e;
   padding: 259px 0 284px;
   text-align: center;
@@ -147,21 +161,29 @@ address {
 }
 
 .hero-btn {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--accent-color);
   border-radius: 5px;
   line-height: 1.56;
   color: var(--secondary-text-color);
-  padding: 10px 30px 9px 41px;
+  padding: 10px 30px 9px 27px;
+}
+
+.hero-btn-icon {
+  margin-right: 5px;
+  fill: currentColor;
 }
 
 /* About */
 
 .about {
-  padding-top: 122px;
+  padding-top: 40px;
   padding-bottom: 19px;
 
-  background-color: #f4f4f4;
+  background-color: var(--secondary-bg-color);
 }
 
 .about .container {
@@ -173,10 +195,20 @@ address {
   gap: 71px;
 }
 
-.list {
+.about-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  width: 67px;
+  height: 67px;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: #28a745;
 }
 
-.about-item {
+.about-icon {
+  fill: currentColor;
 }
 
 .about-title {
@@ -252,6 +284,7 @@ address {
   border-radius: 5px;
 }
 
+/* Callback */
 /* Business Cases */
 .section-cases {
   padding: 50px 0 47px 0;
@@ -378,34 +411,19 @@ address {
 
 /* Callback */
 
-.callback-section {
-  background-color: var(--secondary-bg-color);
-}
-
-.callback-container {
+.callback .container {
   display: flex;
-  justify-content: center;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 
-.callback-container::before {
-  content: '';
-  display: block;
-  width: 50%;
-  min-height: 460px;
-  background-image: url(../images/background-images/callback-background-image.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.callback-content {
+.callback-content-wrapper {
   width: 50%;
   padding-top: 78px;
   padding-right: 30px;
   padding-bottom: 82px;
   padding-left: 30px;
+
+  background-color: var(--secondary-bg-color);
 }
 
 .callback-title {
