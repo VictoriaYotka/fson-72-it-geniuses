@@ -325,14 +325,14 @@ address {
 .posts-title{
   font-weight: 300;
   font-size: 38px;
-  line-height: 48px;
+  line-height: 1.56;
   color: #FFFFFF;
   margin-bottom: 26px;
 
 }
 .posts-description{
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.26;
   color: #FFFFFF;
   margin-bottom: 17px;
 }
