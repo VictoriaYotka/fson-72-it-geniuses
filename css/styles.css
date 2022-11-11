@@ -176,7 +176,7 @@ address {
   padding-top: 40px;
   padding-bottom: 19px;
 
-  background-color: #f4f4f4;
+  background-color: var(--secondary-bg-color);
 }
 
 .about .container {
@@ -278,35 +278,71 @@ address {
 }
 
 /* Callback */
-
-.callback-section {
-  background-color: var(--secondary-bg-color);
+/* Business Cases */
+.section-cases {
+  padding: 50px 0 47px 0;
 }
 
-.callback-container {
+.section-cases .container {
+  padding: 0 28px;
+}
+
+.uppertitle-cases {
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 15px;
+}
+
+.title-cases {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.263;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 34px;
+}
+
+.text-cases {
+  font-size: 18px;
+  line-height: 1.556;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 39px;
+}
+
+.photos-flex {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding-left: 0;
-  padding-right: 0;
+  gap: 7px 8px;
 }
 
-.callback-container::before {
-  content: "";
-  display: block;
-  width: 50%;
-  min-height: 460px;
-  background-image: url(../images/background-images/callback-background-image.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.cases-photos {
+  width: 320px;
+  height: 214px;
+  border-radius: 0px;
 }
 
-.callback-content {
+/* Callback */
+
+.callback .container {
+  display: flex;
+  padding: 0;
+}
+
+.callback-content-wrapper {
   width: 50%;
   padding-top: 78px;
   padding-right: 30px;
   padding-bottom: 82px;
   padding-left: 30px;
+
+  background-color: var(--secondary-bg-color);
 }
 
 .callback-title {
