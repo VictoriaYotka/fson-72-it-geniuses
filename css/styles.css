@@ -317,7 +317,7 @@ address {
   color: var(--primary-text-color);
 }
 
-.team-section h2 {
+.our-professionals {
   text-align: center;
   font-size: 38px;
   line-height: 1.3;
@@ -326,7 +326,7 @@ address {
   font-weight: 300;
 }
 
-.team-section .team-descr {
+.team-descr {
   text-align: center;
   font-size: 18px;
   line-height: 1.6;
@@ -334,22 +334,19 @@ address {
   margin-bottom: 45px;
 }
 
-.team-section ul {
+.team-list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .person {
-  margin-right: 19px;
+  margin-right: 16px;
 }
 .person-second {
-  margin-right: 12px;
+  margin-right: 16px;
 }
 .person:last-child {
   margin-right: 0px;
-}
-.no-gap {
-  display: block;
 }
 
 .beneath-big-img {
@@ -371,7 +368,7 @@ address {
   margin-top: 11px;
 }
 
-.team-list p {
+.position {
   text-align: center;
   font-size: 18px;
   line-height: 1.5;
