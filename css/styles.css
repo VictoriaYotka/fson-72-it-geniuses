@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: var(--primary-text-color);
   background-color: var(--main-bg-color);
   font-size: 18px;
@@ -55,6 +55,10 @@ address {
   font-style: normal;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* components */
 .container {
   width: 1360px;
@@ -83,14 +87,16 @@ address {
   overflow: hidden;
 }
 
+.header-bg {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
 /* HEADER */
 
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  background-color: rgba(94, 94, 94, 0.1);
+  z-index: 1;
 }
 
 .header .container {
@@ -113,6 +119,9 @@ address {
   font-size: 35px;
   line-height: 1.21;
   color: var(--secondary-text-color);
+
+  display: flex;
+  align-items: center;
 }
 
 .accent {
@@ -122,6 +131,7 @@ address {
 
 .logo-icon {
   fill: var(--accent-color);
+  margin-right: 10px;
 }
 
 .nav-link {
@@ -136,13 +146,13 @@ address {
 
 .hero {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1360px;
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url("../images/hero-bg.jpg");
+    url('../images/hero/hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -190,6 +200,9 @@ address {
   padding-bottom: 19px;
 
   background-color: var(--secondary-bg-color);
+
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .about .container {
