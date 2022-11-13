@@ -6,6 +6,8 @@
   --secondary-bg-color: #f4f4f4;
   --posts-bg-color: #0284d0;
   --footer-bg-color: rgba(51, 51, 51, 1);
+  --timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  --duration: 250ms;
 }
 
 body {
@@ -135,12 +137,45 @@ button {
 }
 
 .nav-link {
+  position: relative;
+
   display: block;
   padding-top: 21px;
   padding-bottom: 21px;
   line-height: 1.56;
   color: var(--secondary-text-color);
+
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  position: absolute;
+  bottom: 0;
+
+  content: "";
+  display:block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  transition: background-color var(--duration) var(--timing-function);
+}
+
+
 
 /* HERO */
 
