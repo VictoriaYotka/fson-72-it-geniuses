@@ -615,14 +615,3 @@ button {
 .person:hover .overlay-team {
   transform: translateY(0);
 }
-
-/* conflict */
-
-.section-bottom {
-  width: 100px;
-  height: 100px;
-
-  font-size: 18px;
-
-  background-color: #0284d0;
-}
