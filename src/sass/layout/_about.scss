@@ -1,0 +1,54 @@
+.about {
+  padding-top: 40px;
+  padding-bottom: 19px;
+
+  background-color: var(--secondary-bg-color);
+
+  max-width: 1360px;
+  margin: 0 auto;
+
+  & .container {
+    padding: 0 66px;
+  }
+
+  &-list {
+    display: flex;
+    gap: 71px;
+  }
+
+  &-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    width: 67px;
+    height: 67px;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #28a745;
+  }
+
+  &-icon {
+    fill: currentColor;
+  }
+
+  &-title {
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.65;
+
+    text-align: center;
+
+    color: var(--primary-text-color);
+  }
+
+  &-description {
+    line-height: 1.56;
+
+    text-align: center;
+
+    color: var(--primary-text-color);
+  }
+}

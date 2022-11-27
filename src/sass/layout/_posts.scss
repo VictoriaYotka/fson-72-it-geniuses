@@ -1,0 +1,23 @@
+.posts {
+  & .container {
+    display: flex;
+    padding: 0;
+  }
+
+  &-content-wrapper {
+    width: 50%;
+    padding: 112px 44px 123px 30px;
+
+    background-color: var(--posts-bg-color);
+  }
+
+  &-btn {
+    display: inline-block;
+    padding: 11px 31px 10px 42px;
+    line-height: 1.56;
+    color: var(--secondary-text-color);
+    background-color: transparent;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 5px;
+  }
+}

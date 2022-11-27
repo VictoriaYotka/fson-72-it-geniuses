@@ -1,0 +1,14 @@
+.section-description {
+  font-size: 18px;
+  line-height: 1.26;
+
+  &__light {
+    color: var(--secondary-text-color);
+    margin-bottom: 17px;
+  }
+
+  &__dark {
+    color: var(--primary-text-color);
+    margin-bottom: 39px;
+  }
+}
