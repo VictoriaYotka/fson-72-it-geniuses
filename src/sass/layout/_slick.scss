@@ -1,0 +1,28 @@
+.slick {
+  height: 600px;
+  background-color: #5e5e5e;
+
+  &-card {
+    height: 400px;
+    background-color: #ffffff;
+  }
+
+  &-title {
+    font-size: 44px;
+    text-align: center;
+  }
+
+  &-description {
+    padding: 40px;
+    line-height: 1.5;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: red;
+}
+
+.slick-dots li.slick-active button:before {
+  color: green;
+}
