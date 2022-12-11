@@ -13,3 +13,5 @@ window.onscroll = function () {
       : refs.headerEl.classList.add('header-bg');
   }
 };
+
+console.log('Hello');
