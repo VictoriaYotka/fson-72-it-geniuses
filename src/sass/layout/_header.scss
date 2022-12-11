@@ -2,20 +2,43 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+  padding-top: 21px;
+
+  @media screen and(min-width: $tablet) {
+    padding-top: 0;
+  }
 
   & .container {
-    padding: 0 50px;
+    padding: 0 28px;
+
+    @media screen and(min-width: $tablet) {
+      padding: 0 40px;
+    }
+
+    @media screen and(min-width: $descktop) {
+      padding: 0 50px;
+    }
   }
 
   .nav {
-    display: flex;
-    align-items: center;
+    @media screen and(min-width: $tablet) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .nav-list {
-    gap: 38px;
+    gap: 12px;
     display: flex;
     align-items: center;
+
+    @media screen and(min-width: $tablet) {
+      gap: 18px;
+    }
+
+    @media screen and(min-width: $descktop) {
+      gap: 38px;
+    }
   }
 
   &-logo__margin {
@@ -35,6 +58,7 @@
   .nav-link {
     position: relative;
 
+    font-size: 16px;
     display: block;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -44,6 +68,10 @@
     transition-property: color;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-function);
+
+    @media screen and(min-width: $tablet) {
+      font-size: 18px;
+    }
   }
 
   .nav-link:hover,
