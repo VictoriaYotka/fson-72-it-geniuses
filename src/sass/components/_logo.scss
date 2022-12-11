@@ -1,0 +1,12 @@
+.logo {
+  font-size: 35px;
+  line-height: 1.21;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    fill: var(--accent-color);
+    margin-right: 10px;
+  }
+}

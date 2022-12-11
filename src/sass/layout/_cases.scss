@@ -1,0 +1,24 @@
+.section-cases {
+  padding: 50px 0 47px 0;
+  text-align: center;
+
+  & .container {
+    padding: 0 28px;
+  }
+
+  .photos-flex {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px 8px;
+  }
+
+  .cases-photos {
+    width: 320px;
+    height: 214px;
+    border-radius: 0px;
+  }
+}

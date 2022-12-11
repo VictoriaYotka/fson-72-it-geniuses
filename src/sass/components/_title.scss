@@ -1,0 +1,15 @@
+.title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.56;
+
+  &__light {
+    color: var(--secondary-text-color);
+    margin-bottom: 26px;
+  }
+
+  &__dark {
+    color: var(--primary-text-color);
+    margin-bottom: 34px;
+  }
+}

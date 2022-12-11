@@ -1,0 +1,57 @@
+.hero {
+  margin: 0 auto;
+  max-width: 1360px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../images/hero/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #5e5e5e;
+  padding: 259px 0 284px;
+  text-align: center;
+
+  &__title {
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 1.2;
+    color: #e9e9e9;
+    margin-bottom: 45px;
+  }
+
+  &__description {
+    font-size: 22px;
+    line-height: 1.67;
+    color: #e9e9e9;
+    margin-bottom: 29px;
+  }
+
+  &__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    line-height: 1.56;
+    color: var(--secondary-text-color);
+    padding: 10px 30px 9px 27px;
+
+    transition: background-color var(--duration) var(--timing-function),
+      color var(--duration) var(--timing-function);
+  }
+
+  &-btn:hover,
+  &-btn:focus {
+    background-color: var(--secondary-text-color);
+    color: var(--accent-color);
+  }
+
+  &-btn-icon {
+    margin-right: 5px;
+    fill: currentColor;
+  }
+}
