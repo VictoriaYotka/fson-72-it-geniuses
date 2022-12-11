@@ -8,9 +8,20 @@ body {
 }
 
 .container {
-  width: 1360px;
   margin: 0 auto;
   padding: 0 30px;
+
+  @media screen and(min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and(min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and(min-width: $descktop) {
+    width: 1360px;
+  }
 }
 
 .header-bg {
