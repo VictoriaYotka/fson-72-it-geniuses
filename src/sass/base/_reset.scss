@@ -24,7 +24,8 @@ p {
 }
 
 /* Свойства для корректного отображения картинок  */
-img {
+img,
+picture {
   display: block;
   max-width: 100%;
   height: auto;

@@ -12,7 +12,7 @@ body {
   padding: 0 30px;
 
   @media screen and(min-width: $mobile) {
-    width: 480px;
+    width: $mobile;
   }
 
   @media screen and(min-width: $tablet) {

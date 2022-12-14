@@ -1,11 +1,64 @@
 <section class="callback">
   <div class="container">
-    <img
-      src="./images/callback/callback-background-image.jpg"
-      alt="A man at a laptop"
-      width="680"
-      height="460"
-    />
+    <picture>
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1360px)"
+        srcset="
+          ./images/callback/img680@1x.webp 1x,
+          ./images/callback/img680@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1360px)"
+        srcset="
+          ./images/callback/img680@1x.jpg 1x,
+          ./images/callback/img680@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/callback/img384@1x.webp 1x,
+          ./images/callback/img384@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/callback/img384@1x.jpg 1x,
+          ./images/callback/img384@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767.98px)"
+        srcset="
+          ./images/callback/img320@1x.webp 1x,
+          ./images/callback/img320@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 767.98px)"
+        srcset="
+          ./images/callback/img320@1x.jpg 1x,
+          ./images/callback/img320@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <img
+        src="./images/callback/img320@1x.jpg"
+        alt="A man at the laptop"
+        loading="lazy"
+      />
+    </picture>
+
     <div class="callback-content-wrapper">
       <h2 class="section-title callback-title">Request Callback</h2>
       <form action="" class="input-form">
