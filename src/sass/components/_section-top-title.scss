@@ -3,8 +3,24 @@
   line-height: 1.65;
 
   &__light {
+    font-size: 18px;
+    line-height: calc(30/18);
+
     color: var(--secondary-text-color);
     margin-bottom: 5px;
+
+    //tablet
+    @media screen and (min-width:768px) {
+      margin-bottom: 6px;
+      font-size: 20px;
+      line-height: calc(33/20);
+
+    }
+    //desktop
+     @media screen and (min-width:1200px) {
+      margin-bottom: 5px;
+    }
+
   }
 
   &__dark {

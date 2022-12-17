@@ -5,7 +5,11 @@
 
   &__light {
     color: var(--secondary-text-color);
-    margin-bottom: 26px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width:$tablet) {
+     margin-bottom: 26px;
+    }
   }
 
   &__dark {
