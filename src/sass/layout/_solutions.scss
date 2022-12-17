@@ -1,25 +1,59 @@
 .solutions {
   & .container {
-    display: flex;
     padding: 0;
+
+    // Tablet & desktop styles
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
   }
 
   &-content-wrapper {
-    width: 50%;
-    padding: 84px 44px 84px 30px;
+    
+    padding: 30px;
 
     background-color: var(--accent-color);
+
+    // Tablet styles
+    @media screen and (min-width: $tablet) {
+      width: 50%;
+      padding: 30px 30px 30px 30px;
+    }
+
+    // Desktop styles
+    @media screen and (min-width: $descktop) {
+      
+      padding: 78px 44px 84px 30px;
+    }
   }
 
   &-btn {
     display: inline-block;
-    padding: 11px 27px 12px 42px;
-    line-height: 1.56;
+    padding: 20px 31px 21px 41px;
+    font-size: 16px;
+    line-height: 1.62px;
 
     color: var(--secondary-text-color);
     background-color: transparent;
 
     border: 1px solid var(--secondary-text-color);
     border-radius: 5px;
+
+    // Tablet styles
+    @media screen and (min-width: $tablet) {
+      padding: 21px 31px 20px 42px;
+
+      font-size: 18px;
+      line-height: 1.55px;
+    }
+
+    // Desktop styles
+    @media screen and (min-width: $descktop) {
+      padding: 21px 27px 22px 42px;
+    }
+
   }
 }
+
+
+

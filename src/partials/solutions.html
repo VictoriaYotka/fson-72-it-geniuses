@@ -1,11 +1,56 @@
 <section class="solutions">
   <div class="container">
-    <img
-      src="./images/solutions/solutions.jpg"
-      alt="team"
-      width="680"
-      height="460"
-    />
+    <picture>
+      <!-- desktop screen -->
+      <source media="(min-width: 1360px)" srcset="
+      ./images/solutions/img680_lg@1x.webp 1x,
+      ./images/solutions/img680_lg@2x.webp 2x " height: 680px; type="image/webp"
+      /> <source media="(min-width: 1360px)" srcset="
+      ./images/solutions/img680_lg@1x.jpg 1x,
+      ./images/solutions/img680_lg@2x.jpg 2x " height: 680px; type="image/jpg"
+      />
+      <!-- tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/solutions/img384_md@1x.webp 1x,
+          ./images/solutions/img384_md@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/solutions/img384_md@1x.jpg 1x,
+          ./images/solutions/img384_md@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+
+      <!-- phone screen -->
+      <source
+        media="(max-width: 767.98px)"
+        srcset="
+          ./images/solutions/img320_sm@1x.webp 1x,
+          ./images/solutions/img320_sm@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 767.98px)"
+        srcset="
+          ./images/solutions/img320_sm@1x.jpg 1x,
+          ./images/solutions/img320_sm@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        src="./images/solutions/img320_sm@1x.jpg"
+        alt="team"
+        loading="lazy"
+      />
+    </picture>
+
     <div class="solutions-content-wrapper">
       <p class="section-top-title section-top-title__light">
         What you are looking for
