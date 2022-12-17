@@ -1,10 +1,17 @@
 .section-top-title {
-  font-size: 20px;
-  line-height: 1.65;
+  font-size: 18px;
+  line-height: 1.66;
 
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+
+  
   &__light {
     color: var(--secondary-text-color);
     margin-bottom: 5px;
+    
   }
 
   &__dark {

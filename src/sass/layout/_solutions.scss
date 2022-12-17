@@ -14,16 +14,16 @@
 
     background-color: var(--accent-color);
 
-
     // Tablet styles
     @media screen and (min-width: $tablet) {
       width: 50%;
+      padding: 30px 30px 30px 30px;
     }
 
     // Desktop styles
     @media screen and (min-width: $descktop) {
       
-      padding: 84px 44px 84px 30px;
+      padding: 78px 44px 84px 30px;
     }
   }
 

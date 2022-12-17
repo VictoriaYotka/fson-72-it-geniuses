@@ -1,37 +1,13 @@
 <section class="solutions">
   <div class="container">
-    <!-- <img
-      srcset="
-        ./images/solutions/img320_sm@1x.jpg  320w,
-        ./images/solutions/img320_sm@2x.jpg  640w,
-        ./images/solutions/img384_md@1x.jpg  384w,
-        ./images/solutions/img384_md@2x.jpg  768w,
-        ./images/solutions/img680_lg@1x.jpg  680w,
-        ./images/solutions/img680_lg@2x.jpg 1360w
-      "
-      src="./images/solutions/img320_sm@1x.jpg"
-      sizes="(min-width: 1360px) 680px, (min-width: 768px) 384px, (min-width: 320px) 320px, 100vw"
-      alt="team"
-      min-width="680"
-    /> -->
-
     <picture>
       <!-- desktop screen -->
-      <source
-        media="(min-width: 1360px)"
-        srcset="
-          ./images/solutions/img680_lg@1x.webp 1x,
-          ./images/solutions/img680_lg@2x.webp 2x
-        "
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 1360px)"
-        srcset="
-          ./images/solutions/img680_lg@1x.jpg 1x,
-          ./images/solutions/img680_lg@2x.jpg 2x
-        "
-        type="image/jpg"
+      <source media="(min-width: 1360px)" srcset="
+      ./images/solutions/img680_lg@1x.webp 1x,
+      ./images/solutions/img680_lg@2x.webp 2x " height: 680px; type="image/webp"
+      /> <source media="(min-width: 1360px)" srcset="
+      ./images/solutions/img680_lg@1x.jpg 1x,
+      ./images/solutions/img680_lg@2x.jpg 2x " height: 680px; type="image/jpg"
       />
       <!-- tablet screen -->
       <source
@@ -63,8 +39,8 @@
       <source
         media="(max-width: 767.98px)"
         srcset="
-          ./images/solutions/img384_md@1x.jpg 1x,
-          ./images/solutions/img384_md@2x.jpg 2x
+          ./images/solutions/img320_sm@1x.jpg 1x,
+          ./images/solutions/img320_sm@2x.jpg 2x
         "
         type="image/jpg"
       />
