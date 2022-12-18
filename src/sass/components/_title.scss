@@ -10,18 +10,10 @@
   
   &__light {
     color: var(--secondary-text-color);
-    margin-bottom: 25px;
-
-    @media screen and (min-width:$tablet) {
-     margin-bottom: 26px;
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 26px;
-
-    }
+    margin-bottom: 26px;
   }
 
   &__dark {
     color: var(--primary-text-color);
     margin-bottom: 34px;
   }
-}
