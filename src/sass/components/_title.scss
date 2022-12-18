@@ -1,13 +1,8 @@
 .title {
   font-weight: 300;
   font-size: 38px;
-  line-height: 1.56;
+  line-height: 1.26;
 
-  @media screen and (max-width: 1359px) {
-    max-width: 204px;
-  }
-
-  
   &__light {
     color: var(--secondary-text-color);
     margin-bottom: 25px;

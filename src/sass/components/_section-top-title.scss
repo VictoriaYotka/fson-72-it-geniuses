@@ -7,11 +7,18 @@
     line-height: 1.65;
   }
 
-  
   &__light {
     color: var(--secondary-text-color);
     margin-bottom: 5px;
-    
+
+    //tablet
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 6px;
+    }
+    //desktop
+    @media screen and (min-width: $descktop) {
+      margin-bottom: 5px;
+    }
   }
 
   &__dark {
