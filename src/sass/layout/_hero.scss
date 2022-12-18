@@ -1,9 +1,8 @@
 .hero {
   margin: 0 auto;
-  max-width: 320px;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: #5e5e5e;
   padding: 144px 0 95px;
   text-align: center;
@@ -21,9 +20,8 @@
               url('../images/hero/img320_sm@2x.jpg');
         }
 
-  @media screen and(min-width: 321px) {
+  @media screen and(min-width: $tablet) {
     padding: 407px 0 412px;
-    max-width: 768px;
     background-image: linear-gradient(0deg,
           rgba(0, 0, 0, 0.4),
           rgba(0, 0, 0, 0.4)),
@@ -39,7 +37,7 @@
           }
   }
 
-  @media screen and(min-width: 769px) {
+  @media screen and(min-width: $descktop) {
     padding: 259px 0 284px;
     max-width: 1600px;
     background-image: linear-gradient(0deg,
