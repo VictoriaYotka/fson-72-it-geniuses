@@ -3,17 +3,17 @@
   font-size: 38px;
   line-height: 1.56;
 
-  @media screen and (max-width: 1359px) {
-    max-width: 204px;
-  }
-}
-  
   &__light {
     color: var(--secondary-text-color);
-    margin-bottom: 26px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 26px;
+    }
   }
 
   &__dark {
     color: var(--primary-text-color);
     margin-bottom: 34px;
   }
+}

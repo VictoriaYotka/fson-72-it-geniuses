@@ -1,14 +1,11 @@
 .posts {
   & .container {
     padding: 0;
-    @media screen and (max-width: 767px) {
-      display: flex;
-      flex-direction: column;
-      flex-direction: column-reverse;
-    }
+    display: flex;
+    flex-direction: column-reverse;
 
     @media screen and (min-width: $tablet) {
-      display: flex;
+      flex-direction: row;
     }
   }
 
@@ -20,19 +17,19 @@
     // Tablet styles
     @media screen and (min-width: $tablet) {
       width: 50%;
-      padding: 29px 30px 39px 30px;
+      padding: 29px 39px 30px 30px;
     }
 
     // Desktop styles
     @media screen and (min-width: $descktop) {
-      padding: 112px 30px 90px 44px;
+      padding: 112px 44px 113px 30px;
     }
   }
 
   &-btn {
     position: relative;
     display: inline-block;
-    padding: 10px 41px 11px 31px;
+    padding: 10px 31px 11px 41px;
     font-size: 16px;
     line-height: calc(26 / 16);
 
@@ -44,7 +41,7 @@
 
     // Tablet styles
     @media screen and (min-width: $tablet) {
-      padding: 11px 42px 10px 31px;
+      padding: 11px 31px 10px 42px;
 
       font-size: 18px;
       line-height: calc(28 / 18);
