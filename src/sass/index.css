@@ -428,6 +428,12 @@ button {
     max-height: 214px;
   }
 }
+@media (max-width: 767.9px) {
+  .section-cases__title {
+    display: inline-block;
+    max-width: 219px;
+  }
+}
 
 .footer {
   background-color: var(--footer-bg-color);
