@@ -17,8 +17,28 @@
   }
 
   .cases-photos {
-    width: 320px;
-    height: 214px;
+    max-width: 264px;
+    max-height: 176px;
     border-radius: 0px;
+
+    @media (min-width: 768px) {
+      max-width: 172px;
+      max-height: 115px;
+    }
+  
+    @media (min-width: 1360px) {
+      max-width: 320px;
+      max-height: 214px;
+    }
+  }
+
+  &__title {
+    
+    @media (max-width: 767.9px){
+
+      display: inline-block;
+      max-width: 219px;
+
+    }
   }
 }

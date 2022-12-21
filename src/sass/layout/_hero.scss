@@ -1,31 +1,64 @@
 .hero {
   margin: 0 auto;
-  max-width: 1360px;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url('../images/hero/hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #5e5e5e;
   padding: 144px 0 95px;
   text-align: center;
+  background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)),
+      url('../images/hero/img320_sm@1x.jpg');
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)),
+              url('../images/hero/img320_sm@2x.jpg');
+        }
 
   @media screen and(min-width: $tablet) {
     padding: 407px 0 412px;
+    background-image: linear-gradient(0deg,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)),
+        url('../images/hero/img768_md@1x.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)),
+              url('../images/hero/img768_md@2x.jpg');
+          }
   }
 
   @media screen and(min-width: $descktop) {
     padding: 259px 0 284px;
+    max-width: 1600px;
+    background-image: linear-gradient(0deg,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)),
+        url('../images/hero/img1360_lg@1x.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)),
+              url('../images/hero/img1360_lg@2x.jpg');
+          }
   }
 
   &__title {
     font-weight: 300;
     font-size: 52px;
-    line-height: 1.2;
+    line-height: 1.27;
     color: #e9e9e9;
     margin-bottom: 16px;
 
@@ -57,12 +90,18 @@
 
     background-color: var(--accent-color);
     border-radius: 5px;
-    line-height: 1.56;
+    font-size: 16px;
+    line-height: 1.6;
     color: var(--secondary-text-color);
     padding: 10px 30px 9px 27px;
 
     transition: background-color var(--duration) var(--timing-function),
       color var(--duration) var(--timing-function);
+
+      @media screen and(min-width: $tablet) {
+          font-size: 18px;
+          line-height: 1.56;
+        }
   }
 
   &-btn:hover,
