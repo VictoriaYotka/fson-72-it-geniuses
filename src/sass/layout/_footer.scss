@@ -1,7 +1,11 @@
 .footer {
   background-color: var(--footer-bg-color);
   padding-top: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet){
+    padding-bottom: 16px;
+  }
 }
 
 .footer-container {
@@ -15,19 +19,11 @@
   justify-content: center;
   align-items: center;
   gap: 25px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 9px;
 
-.socials-item {
-  width: 35px;
-  height: 35px;
-}
-.facebook {
-  width: 40px;
-}
-
-.linkedin {
-  width: 31px;
+  @media screen and (min-width: $tablet) {
+      margin-bottom: 10px;
+    }
 }
 
 .socials-link {
@@ -46,5 +42,11 @@
 
 .footer-copyright {
   color: var(--secondary-text-color);
-  line-height: 1.56;
+  font-size: 16px;
+  line-height: 1.6;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }

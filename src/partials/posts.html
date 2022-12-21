@@ -11,11 +11,65 @@
       </p>
       <button type="button" class="posts-btn link">Read Our Blog</button>
     </div>
-    <img
-      src="./images/posts/Rectangle.jpg"
-      alt="posts"
-      width="680"
-      height="517"
-    />
+  <picture>
+      <!-- desktop screen -->
+      <source
+        media="(min-width: 1360px)"
+        srcset="
+          ./images/posts/img680_lg@1x.webp 1x,
+          ./images/posts/img680_lg@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1360px)"
+        srcset="
+          ./images/posts/img680_lg@1x.jpg 1x,
+          ./images/posts/img680_lg@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <!-- tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/posts/img384_md@1x.webp 1x,
+          ./images/posts/img384_md@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/posts/img384_md@1x.jpg 1x,
+          ./images/posts/img384_md@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+
+      <!-- phone screen -->
+      <source
+        media="(max-width: 767.98px)"
+        srcset="
+          ./images/posts/img320_sm@1x.webp 1x,
+          ./images/posts/img320_sm@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 767.98px)"
+        srcset="
+          ./images/posts/img384_md@1x.jpg 1x,
+          ./images/posts/img384_md@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        src="./images/posts/img320_sm@1x.jpg"
+        alt="team"
+        loading="lazy"
+      />
+    </picture>
+
   </div>
 </section>
