@@ -3,12 +3,23 @@
   padding-bottom: 50px;
   text-align: center;
 
-  & .container {
-    padding: 0;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+  &-title__dark {
+    margin-bottom: 34px;
+  }
+}
 
-    &-title__dark {
-      margin-bottom: 34px;
-    }
+.team-section > .container {
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+.team-section--description {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 49px;
   }
 }
 
@@ -19,41 +30,61 @@
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
-.name {
+.team-name {
   text-align: center;
-  font-size: 25px;
-  line-height: 1.3;
-  margin-bottom: 12px;
-  margin-top: 13px;
+  font-size: 23px;
+  line-height: 1.25;
+  margin-bottom: 11px;
+  margin-top: 15px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+    line-height: 1.27;
+    margin-bottom: 12px;
+    margin-top: 13px;
+  }
 }
 
-.position {
+.team-position {
   text-align: center;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.6;
+  @media screen and (min-with: 768px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
-.overlay-team {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(100%);
-  width: 100%;
-  height: 100%;
-  padding-left: 102px;
-  padding-right: 110px;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  background-color: var(--secondary-text-color);
+.team-overlay {
+  display: none;
+  @media screen and (min-width: 1360px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    padding-left: 102px;
+    padding-right: 110px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.person:hover .overlay-team {
+.team-item:hover .team-overlay {
   transform: translateY(0);
+}
+
+.team--socials {
+  margin-bottom: 0;
 }
